@@ -191,7 +191,7 @@
     <icon drawable="@drawable/themed_icon_google_one" package="com.google.android.apps.subscriptions.red" />
     <icon drawable="@drawable/themed_icon_google_rewards" package="com.google.android.apps.paidtasks" />
     <icon drawable="@drawable/themed_icon_google_tv" package="com.google.android.videos" />
-    <icon drawable="@drawable/themed_icon_GoogleClassroom" package="com.google.android.apps.classroom" />
+    <icon drawable="@drawable/themed_icon_googleclassroom" package="com.google.android.apps.classroom" />
     <icon drawable="@drawable/themed_icon_gpay" package="com.google.android.apps.nbu.paisa.user" />
     <icon drawable="@drawable/themed_icon_grab" package="com.grabtaxi.passenger" />
     <icon drawable="@drawable/themed_icon_graph_messenger" package="ir.ilmili.telegraph" />
