@@ -25,6 +25,7 @@ jobs:
           
           zipalign="tools/libzipalign.so"
           framework="system/framework/framework-res.apk"
+          systemui="system/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"
           
           for folder in */; do
             if [ -f "$folder/AndroidManifest.xml" ] && [ -d "$folder/res" ]; then
@@ -32,7 +33,7 @@ jobs:
               echo "Building APK for $folder"
               
               # Adjust the build command as per your build system and requirements
-              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -F APKs/"$folder".apk >/dev/null
+              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F APKs/"$folder".apk >/dev/null
             else
               # Manifest or res directory is missing, skip building APK
               echo "Skipping $folder (missing manifest or res)"
