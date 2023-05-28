@@ -477,7 +477,7 @@
     <icon drawable="@drawable/themed_icon_vk_mp3_mod" package="com.vkmp3mod.android" />
     <icon drawable="@drawable/themed_icon_vk_x" package="ua.itaysonlab.vkx" />
     <icon drawable="@drawable/themed_icon_vlc" package="org.videolan.vlc" />
-    <icon drawable="@drawable/themed_icon_VN" package="com.frontrow.vlog" />
+    <icon drawable="@drawable/themed_icon_vn" package="com.frontrow.vlog" />
     <icon drawable="@drawable/themed_icon_vtb_online" package="ru.vtb24.mobilebanking.android" />
     <icon drawable="@drawable/themed_icon_vtosters" package="com.vkontakte.android" />
     <icon drawable="@drawable/themed_icon_wall_x" package="com.stresscodes.wallp" />
