@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="dimen" name="navigation_bar_gesture_height">@android:dimen/messaging_group_sending_progress_size</item>
+    <item type="dimen" name="navigation_bar_gesture_height">@*android:dimen/messaging_group_sending_progress_size</item>
 </resources>

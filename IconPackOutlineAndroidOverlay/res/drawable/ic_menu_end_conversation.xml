@@ -8,7 +8,7 @@
     </item>
     <item android:gravity="bottom" android:height="1.5dip">
         <shape android:shape="rectangle">
-            <solid android:color="@android:color/car_body1_dark" />
+            <solid android:color="@*android:color/car_body1_dark" />
         </shape>
     </item>
 </layer-list>

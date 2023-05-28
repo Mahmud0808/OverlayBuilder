@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.SystemUI.QuickSettings" parent="@android:style/Theme.DeviceDefault.Settings.DialogBase">
+    <style name="Theme.SystemUI.QuickSettings" parent="@*android:style/Theme.DeviceDefault.Settings.DialogBase">
         <item name="android:colorBackground">@color/qs_colorBackground</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:itemTextAppearance">@style/Control.MenuItem</item>
