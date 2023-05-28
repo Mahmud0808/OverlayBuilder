@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">manrope</string>
+    <string name="config_bodyFontFamilyMedium">manrope-medium</string>
+    <string name="config_headlineFontFamily">manrope</string>
+    <string name="config_headlineFontFamilyMedium">manrope-medium</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">fifa2018</string>
+    <string name="config_bodyFontFamilyMedium">fifa2018-semi-bold</string>
+    <string name="config_headlineFontFamily">fifa2018-medium</string>
+    <string name="config_headlineFontFamilyMedium">fifa2018-bold</string>
+    <string name="config_lightFontFamily">fifa2018-light</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_fifa2018_source_overlay">Fifa 2018</string>
+</resources>

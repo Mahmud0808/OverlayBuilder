@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">roboto-system</string>
+    <string name="config_bodyFontFamilyMedium">roboto-system-medium</string>
+    <string name="config_headlineFontFamily">roboto-system</string>
+    <string name="config_headlineFontFamilyMedium">roboto-system-medium</string>
+</resources>

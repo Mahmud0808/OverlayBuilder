@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">quando</string>
+    <string name="config_bodyFontFamilyMedium">quando-semi-bold</string>
+    <string name="config_headlineFontFamily">quando-medium</string>
+    <string name="config_headlineFontFamilyMedium">quando-bold</string>
+    <string name="config_lightFontFamily">quando-light</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_quando_source_overlay">Quando</string>
+</resources>

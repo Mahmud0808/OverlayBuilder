@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">source-sans</string>
+    <string name="config_bodyFontFamilyMedium">source-sans-medium</string>
+    <string name="config_headlineFontFamily">source-sans</string>
+    <string name="config_headlineFontFamilyMedium">source-sans-medium</string>
+</resources>

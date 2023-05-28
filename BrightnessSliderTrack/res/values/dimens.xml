@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rounded_slider_corner_radius">24.0dip</dimen>
+    <dimen name="rounded_slider_track_corner_radius">24.0dip</dimen>
+    <dimen name="rounded_slider_track_width">48.0dip</dimen>
+    <dimen name="rounded_slider_track_inset">0.0dip</dimen>
+</resources>

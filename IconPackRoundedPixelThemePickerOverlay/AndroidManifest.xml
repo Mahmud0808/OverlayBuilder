@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.android.theme.icon_pack.rounded.themepicker" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <overlay android:category="android.theme.customization.icon_pack.themepicker_vm" android:priority="1" android:targetPackage="com.google.android.apps.wallpaper"/>
+    <application  android:hasCode="false" android:label="@string/icon_pack_rounded_themepicker_overlay"/>
+</manifest>

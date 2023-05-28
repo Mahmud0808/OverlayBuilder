@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">google-sans-inter</string>
+    <string name="config_bodyFontFamilyMedium">google-sans-medium-inter</string>
+    <string name="config_headlineFontFamily">google-sans-inter</string>
+    <string name="config_headlineFontFamilyMedium">google-sans-medium-inter</string>
+    <string name="font_google_sans_inter_overlay">Google Sans (Inter)</string>
+</resources>

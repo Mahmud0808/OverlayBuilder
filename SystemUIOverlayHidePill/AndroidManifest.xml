@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.android.systemui.overlay.hidepill" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <overlay android:category="com.systemui.custom.pill" android:isStatic="false" android:priority="1" android:targetPackage="com.android.systemui"/>
+    <application  android:hasCode="false" android:label="HidePill.overlay"/>
+</manifest>

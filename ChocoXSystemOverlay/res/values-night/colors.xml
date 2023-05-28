@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_divider_color_dark">#80ffffff</color>
+    <color name="background_device_default_dark">#ff100808</color>
+    <color name="material_grey_800">#ff100808</color>
+    <color name="primary_dark_device_default_dark">#ff100808</color>
+    <color name="primary_dark_device_default_settings">#ff100808</color>
+    <color name="primary_device_default_dark">#ff100808</color>
+    <color name="primary_device_default_settings">#ff100808</color>
+    <color name="system_neutral1_800">#ff100808</color>
+    <color name="system_neutral2_800">#ff100808</color>
+    <color name="GM2_grey_800">#ff0d0606</color>
+    <color name="material_blue_grey_800">#ff0d0606</color>
+    <color name="material_grey_900">#ff0d0606</color>
+    <color name="surface_dark">#ff0d0606</color>
+    <color name="surface_header_dark_sysui">#ff0d0606</color>
+    <color name="surface_highlight_dark">#ff0d0606</color>
+    <color name="system_neutral1_700">#ff0d0606</color>
+    <color name="system_neutral1_900">#ff0d0606</color>
+    <color name="system_neutral2_500">#ff0d0606</color>
+    <color name="system_neutral2_900">#ff0d0606</color>
+</resources>

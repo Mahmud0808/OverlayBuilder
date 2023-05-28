@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">evolvesans</string>
+    <string name="config_bodyFontFamilyMedium">evolvesans-semi-bold</string>
+    <string name="config_headlineFontFamily">evolvesans</string>
+    <string name="config_headlineFontFamilyMedium">evolvesans-bold</string>
+    <string name="font_evolvesans_source_overlay">Evolve Sans</string>
+</resources>

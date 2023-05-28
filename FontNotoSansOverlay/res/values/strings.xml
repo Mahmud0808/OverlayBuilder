@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">noto-sans</string>
+    <string name="config_bodyFontFamilyMedium">noto-sans-medium</string>
+    <string name="config_headlineFontFamily">noto-sans</string>
+    <string name="config_headlineFontFamilyMedium">noto-sans-medium</string>
+</resources>

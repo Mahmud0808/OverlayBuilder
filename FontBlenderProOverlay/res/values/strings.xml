@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">blenderpro-mod</string>
+    <string name="config_bodyFontFamilyMedium">blenderpro-mod-medium</string>
+    <string name="config_headlineFontFamily">blenderpro-mod</string>
+    <string name="config_headlineFontFamilyMedium">blenderpro-mod-medium</string>
+</resources>

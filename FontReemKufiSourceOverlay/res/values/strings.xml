@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">reemkufi</string>
+    <string name="config_bodyFontFamilyMedium">reemkufi-semi-bold</string>
+    <string name="config_headlineFontFamily">reemkufi-medium</string>
+    <string name="config_headlineFontFamilyMedium">reemkufi-bold</string>
+    <string name="config_lightFontFamily">reemkufi-light</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_reemkufi_source_overlay">ReemKufi</string>
+</resources>

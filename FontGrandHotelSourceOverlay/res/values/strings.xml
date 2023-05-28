@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">grandhotel</string>
+    <string name="config_bodyFontFamilyMedium">grandhotel-semi-bold</string>
+    <string name="config_headlineFontFamily">grandhotel-medium</string>
+    <string name="config_headlineFontFamilyMedium">grandhotel-bold</string>
+    <string name="config_lightFontFamily">grandhotel-light</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_grandhotel_source_overlay">grandhotel</string>
+</resources>

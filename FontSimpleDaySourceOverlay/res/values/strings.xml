@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">simpleday</string>
+    <string name="config_bodyFontFamilyMedium">simpleday-semi-bold</string>
+    <string name="config_headlineFontFamily">simpleday</string>
+    <string name="config_headlineFontFamilyMedium">simpleday-bold</string>
+    <string name="font_simpleday_source_overlay">Simple Day</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">recursive</string>
+    <string name="config_bodyFontFamilyMedium">recursive-medium</string>
+    <string name="config_headlineFontFamily">recursive</string>
+    <string name="config_headlineFontFamilyMedium">recursive-medium</string>
+</resources>

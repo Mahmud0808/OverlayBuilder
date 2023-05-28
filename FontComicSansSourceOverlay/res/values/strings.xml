@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">comicsans</string>
+    <string name="config_bodyFontFamilyMedium">comicsans-semi-bold</string>
+    <string name="config_headlineFontFamily">comicsans</string>
+    <string name="config_headlineFontFamilyMedium">comicsans-bold</string>
+    <string name="config_lightFontFamily">@string/config_bodyFontFamily</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_comicsans_source_overlay">Comic Sans</string>
+</resources>

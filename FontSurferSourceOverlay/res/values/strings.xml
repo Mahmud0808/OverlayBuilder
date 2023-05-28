@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">surfer</string>
+    <string name="config_bodyFontFamilyMedium">surfer-semi-bold</string>
+    <string name="config_headlineFontFamily">surfer</string>
+    <string name="config_headlineFontFamilyMedium">surfer-bold</string>
+    <string name="config_lightFontFamily">@string/config_bodyFontFamily</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_surfer_source_overlay">Surfer</string>
+</resources>

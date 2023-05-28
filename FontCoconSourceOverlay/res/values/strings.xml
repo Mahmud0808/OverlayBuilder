@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">cocon</string>
+    <string name="config_bodyFontFamilyMedium">cocon-semi-bold</string>
+    <string name="config_headlineFontFamily">cocon-medium</string>
+    <string name="config_headlineFontFamilyMedium">cocon-bold</string>
+    <string name="config_lightFontFamily">cocon-light</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_cocon_source_overlay">Cocon</string>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="sh.siava.AOSPMods_QSTheme_BST" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <overlay android:category="android.theme.customization.qs_header_style_vm" android:isStatic="false" android:priority="1" android:targetPackage="com.android.systemui"/>
+    <application  android:hasCode="false" android:label="AOSP Mods QS Panel Theme Overlay BST"/>
+</manifest>

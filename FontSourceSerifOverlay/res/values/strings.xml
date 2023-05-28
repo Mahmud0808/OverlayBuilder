@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">serif</string>
+    <string name="config_bodyFontFamilyMedium">serif-medium</string>
+    <string name="config_headlineFontFamily">serif</string>
+    <string name="config_headlineFontFamilyMedium">serif-medium</string>
+</resources>

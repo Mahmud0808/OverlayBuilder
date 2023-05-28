@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">nokiapure</string>
+    <string name="config_bodyFontFamilyMedium">nokiapure-semi-bold</string>
+    <string name="config_headlineFontFamily">nokiapure-medium</string>
+    <string name="config_headlineFontFamilyMedium">nokiapure-bold</string>
+    <string name="config_lightFontFamily">nokiapure-light</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_nokiapure_source_overlay">Nokia Pure</string>
+</resources>

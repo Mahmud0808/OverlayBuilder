@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">lgsmartgothic</string>
+    <string name="config_bodyFontFamilyMedium">lgsmartgothic-semi-bold</string>
+    <string name="config_headlineFontFamily">lgsmartgothic</string>
+    <string name="config_headlineFontFamilyMedium">lgsmartgothic-bold</string>
+    <string name="config_lightFontFamily">@string/config_bodyFontFamily</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_lgsmartgothic_source_overlay">LGSmartGothic</string>
+</resources>

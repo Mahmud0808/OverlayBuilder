@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">poppins-mod</string>
+    <string name="config_bodyFontFamilyMedium">poppins-mod-medium</string>
+    <string name="config_headlineFontFamily">poppins-mod</string>
+    <string name="config_headlineFontFamilyMedium">poppins-mod-medium</string>
+</resources>

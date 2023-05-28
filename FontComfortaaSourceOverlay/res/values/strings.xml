@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">comfortaa</string>
+    <string name="config_bodyFontFamilyMedium">comfortaa-semi-bold</string>
+    <string name="config_headlineFontFamily">comfortaa-medium</string>
+    <string name="config_headlineFontFamilyMedium">comfortaa-bold</string>
+    <string name="config_lightFontFamily">@string/config_bodyFontFamily</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_comfortaa_source_overlay">Comfortaa</string>
+</resources>

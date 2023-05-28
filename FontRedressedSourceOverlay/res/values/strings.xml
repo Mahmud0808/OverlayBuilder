@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">redressed</string>
+    <string name="config_bodyFontFamilyMedium">redressed-semi-bold</string>
+    <string name="config_headlineFontFamily">redressed-medium</string>
+    <string name="config_headlineFontFamilyMedium">redressed-bold</string>
+    <string name="config_lightFontFamily">redressed-light</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_redressed_source_overlay">redressed</string>
+</resources>

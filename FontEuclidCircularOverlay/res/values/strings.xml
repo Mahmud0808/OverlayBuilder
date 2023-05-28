@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">euclidcirculara-mod</string>
+    <string name="config_bodyFontFamilyMedium">euclidcirculara-mod-medium</string>
+    <string name="config_headlineFontFamily">euclidcirculara-mod</string>
+    <string name="config_headlineFontFamilyMedium">euclidcirculara-mod-medium</string>
+</resources>

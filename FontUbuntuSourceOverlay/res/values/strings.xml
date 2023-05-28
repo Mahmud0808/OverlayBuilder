@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">ubuntu</string>
+    <string name="config_bodyFontFamilyMedium">ubuntu-semi-bold</string>
+    <string name="config_headlineFontFamily">ubuntu-medium</string>
+    <string name="config_headlineFontFamilyMedium">ubuntu-bold</string>
+    <string name="config_lightFontFamily">@string/config_bodyFontFamily</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_ubuntu_source_overlay">Ubuntu</string>
+</resources>

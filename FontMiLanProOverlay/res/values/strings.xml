@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">milanprovf-mod</string>
+    <string name="config_bodyFontFamilyMedium">milanprovf-mod-medium</string>
+    <string name="config_headlineFontFamily">milanprovf-mod</string>
+    <string name="config_headlineFontFamilyMedium">milanprovf-mod-medium</string>
+</resources>

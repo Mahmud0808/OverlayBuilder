@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.android.theme.font.antipastopro" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <overlay android:category="android.theme.customization.font_vm" android:priority="1" android:targetPackage="android"/>
+    <application  android:hasCode="false" android:label="@string/font_antipastopro_source_overlay">
+        <meta-data android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS" android:value="antipastopro,antipastopro-semi-bold,antipastopro-bold"/>
+    </application>
+</manifest>

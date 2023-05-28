@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="qs_tile_start_padding">34.5dip</dimen>
+    <dimen name="qs_tile_margin_horizontal">32.0dip</dimen>
+    <dimen name="qs_quick_tile_size">87.0dip</dimen>
+    <dimen name="qs_tile_height">87.0dip</dimen>
+</resources>

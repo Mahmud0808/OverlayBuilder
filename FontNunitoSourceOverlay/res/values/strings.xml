@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">nunito</string>
+    <string name="config_bodyFontFamilyMedium">nunito-semi-bold</string>
+    <string name="config_headlineFontFamily">nunito-medium</string>
+    <string name="config_headlineFontFamilyMedium">nunito-bold</string>
+    <string name="config_lightFontFamily">nunito-light</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_nunito_source_overlay">Nunito</string>
+</resources>

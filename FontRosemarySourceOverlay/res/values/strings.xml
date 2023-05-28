@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_bodyFontFamily">rosemary</string>
+    <string name="config_bodyFontFamilyMedium">rosemary-semi-bold</string>
+    <string name="config_headlineFontFamily">rosemary</string>
+    <string name="config_headlineFontFamilyMedium">rosemary-bold</string>
+    <string name="config_lightFontFamily">@string/config_bodyFontFamily</string>
+    <string name="config_regularFontFamily">@string/config_bodyFontFamily</string>
+    <string name="font_rosemary_source_overlay">Rosemary</string>
+</resources>
