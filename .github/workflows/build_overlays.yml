@@ -44,6 +44,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Add APKs
-          file_pattern: 'APKs/*.apk'
+          file_pattern: 'APKs/**/*.apk'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
