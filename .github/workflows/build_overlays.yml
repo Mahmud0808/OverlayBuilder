@@ -1,0 +1,48 @@
+name: Build and Upload APKs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Installing aapt
+        run: |
+          sudo apt-get update
+          sudo apt-get install aapt
+      
+      - name: Build and Upload APKs
+        run: |
+          rm -rf APKs
+          mkdir -p APKs
+          
+          zipalign="tools/libzipalign.so"
+          framework="system/framework/framework-res.apk"
+          
+          for folder in */; do
+            if [ -f "$folder/AndroidManifest.xml" ] && [ -d "$folder/res" ]; then
+              # Manifest and res directory exist, proceed with building APK
+              echo "Building APK for $folder"
+              
+              # Adjust the build command as per your build system and requirements
+              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -F APKs/"$folder".apk >/dev/null
+            else
+              # Manifest or res directory is missing, skip building APK
+              echo "Skipping $folder (missing manifest or res)"
+            fi
+          done
+      
+      - name: Commit and Push APKs
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Add APKs
+          file_pattern: 'APKs/*.apk'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
