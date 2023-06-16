@@ -42,12 +42,7 @@ jobs:
           framework=".github/system/framework/framework-res.apk"
           systemui=".github/system/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"
         
-          for folder in *; do
-            if [[ $folder == .* ]]; then
-              # Skip folders starting with a full stop
-              continue
-            fi
-            
+          for folder in Overlays/*; do
             if [ -f "$folder/AndroidManifest.xml" ] && [ -d "$folder/res" ]; then
               # Manifest and res directory exist, proceed with building APK
               echo "Building APK for $folder"
@@ -89,6 +84,6 @@ jobs:
       - name: Upload overlay APKs
         uses: actions/upload-artifact@v3
         with:
-          name: "AOSPModsOverlays"
+          name: "Overlays"
           path: .github/Output/*.apk
           if-no-files-found: error
