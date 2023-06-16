@@ -67,6 +67,8 @@ jobs:
           
           for apk in "$unaligned"/*; do
             filename=$(basename "$apk")
+            echo "ZipAligning APK for $filename"
+            
             zipalign -p -f 4 "$unaligned/$filename" "$unsigned/$filename"
           done
       
@@ -79,6 +81,8 @@ jobs:
           
           for apk in "$unsigned"/*; do
             filename=$(basename "$apk")
+            echo "Signing APK for $filename"
+            
             apksigner sign --key $testkey --cert $certificate --in "$unsigned/$filename" --out "$output/$filename"
           done
 
@@ -86,5 +90,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: "AOSPModsOverlays"
-          path: .github/Output/*
+          path: .github/Output/*.apk
           if-no-files-found: error
