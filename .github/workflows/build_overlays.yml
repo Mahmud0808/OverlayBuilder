@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '.github/edit2MakeNewOverlays'
 
 jobs:
   build_and_upload:
@@ -11,14 +13,14 @@ jobs:
     
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       
       - name: Installing aapt
         run: |
           sudo apt-get update
           sudo apt-get install aapt
       
-      - name: Build and Upload APKs
+      - name: Build overlay APKs
         run: |
           rm -rf APKs
           mkdir -p APKs
