@@ -46,7 +46,7 @@ jobs:
             if [ -f "$folder/AndroidManifest.xml" ] && [ -d "$folder/res" ]; then
               # Manifest and res directory exist, proceed with building APK
               foldername=$(basename "$folder")
-              echo "Building APK for $folder"
+              echo "Building APK for $foldername"
               
               # Build APK with AAPT
               aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F "$unaligned"/"$foldername".apk >/dev/null
