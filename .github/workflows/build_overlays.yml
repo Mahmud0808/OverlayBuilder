@@ -15,10 +15,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
       
-      - name: Installing aapt
+      - name: Installing aapt, zipalign and apksigner
         run: |
           sudo apt-get update
           sudo apt-get install aapt
+          sudo apt-get install zipalign
+          sudo apt-get install apksigner
       
       - name: Build overlay APKs
         run: |
