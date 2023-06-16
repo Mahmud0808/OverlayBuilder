@@ -45,10 +45,11 @@ jobs:
           for folder in Overlays/*; do
             if [ -f "$folder/AndroidManifest.xml" ] && [ -d "$folder/res" ]; then
               # Manifest and res directory exist, proceed with building APK
+              foldername=$(basename "$folder")
               echo "Building APK for $folder"
               
               # Build APK with AAPT
-              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F "$unaligned"/"$folder".apk >/dev/null
+              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F "$unaligned"/"$foldername".apk >/dev/null
             else
               # Manifest or res directory is missing, skip building APK
               echo "Skipping $folder (missing manifest or res)"
