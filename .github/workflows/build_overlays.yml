@@ -66,7 +66,8 @@ jobs:
           unsigned=".github/Unsigned"
           
           for apk in "$unaligned"/*; do
-            zipalign -p -f 4 "$unaligned/$apk" "$unsigned/$apk"
+            filename=$(basename "$apk")
+            zipalign -p -f 4 "$unaligned/$filename" "$unsigned/$filename"
           done
       
       - name: Sign overlay APKs
@@ -77,7 +78,8 @@ jobs:
           certificate=".github/keystore/testkey.x509.pem"
           
           for apk in "$unaligned"/*; do
-            apksigner sign --key $testkey --cert $certificate --in "$unsigned/$apk" --out "$output/$apk"
+            filename=$(basename "$apk")
+            apksigner sign --key $testkey --cert $certificate --in "$unsigned/$filename" --out "$output/$filename"
           done
 
       - name: Upload overlay APKs
