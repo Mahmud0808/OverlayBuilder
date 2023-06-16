@@ -15,32 +15,69 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
       
-      - name: Installing aapt, zipalign and apksigner
+      - name: Preparing environment
         run: |
           sudo apt-get update
           sudo apt-get install aapt
           sudo apt-get install zipalign
           sudo apt-get install apksigner
+          
+          output=".github/Output"
+          unaligned=".github/Unaligned"
+          unsigned=".github/Unsigned"
+          
+          # Remove temporary directories
+          rm -rf $output
+          rm -rf $unaligned
+          rm -rf $unsigned
+          
+          # Create temporary directories
+          mkdir -p $output
+          mkdir -p $unaligned
+          mkdir -p $unsigned
       
       - name: Build overlay APKs
         run: |
-          rm -rf APKs
-          mkdir -p APKs
-        
+          unaligned=".github/Unaligned"
           framework=".github/system/framework/framework-res.apk"
           systemui=".github/system/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"
-          
+        
           for folder in *; do
+            if [[ $folder == .* ]]; then
+              # Skip folders starting with a full stop
+              continue
+            fi
+            
             if [ -f "$folder/AndroidManifest.xml" ] && [ -d "$folder/res" ]; then
               # Manifest and res directory exist, proceed with building APK
               echo "Building APK for $folder"
               
-              # Adjust the build command as per your build system and requirements
-              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F .github/Output/"$folder".apk >/dev/null
+              # Build APK with AAPT
+              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F "$unaligned"/"$folder".apk >/dev/null
             else
               # Manifest or res directory is missing, skip building APK
               echo "Skipping $folder (missing manifest or res)"
             fi
+          done
+      
+      - name: Zipalign overlay APKs
+        run: |
+          unaligned=".github/Unaligned"
+          unsigned=".github/Unsigned"
+          
+          for apk in "$unaligned"/*; do
+            zipalign -p -f 4 "$unaligned/$apk" "$unsigned/$apk"
+          done
+      
+      - name: Sign overlay APKs
+        run: |
+          output=".github/Output"
+          unsigned=".github/Unsigned"
+          testkey=".github/keystore/testkey.pk8"
+          certificate=".github/keystore/testkey.x509.pem"
+          
+          for apk in "$unaligned"/*; do
+            apksigner sign --key $testkey --cert $certificate --in "$unsigned/$apk" --out "$output/$apk"
           done
 
       - name: Upload overlay APKs
