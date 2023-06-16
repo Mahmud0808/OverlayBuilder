@@ -36,7 +36,7 @@ jobs:
               echo "Building APK for $folder"
               
               # Adjust the build command as per your build system and requirements
-              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F APKs/"$folder".apk >/dev/null
+              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F .github/Output/"$folder".apk >/dev/null
             else
               # Manifest or res directory is missing, skip building APK
               echo "Skipping $folder (missing manifest or res)"
