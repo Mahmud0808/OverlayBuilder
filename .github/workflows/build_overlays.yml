@@ -26,10 +26,9 @@ jobs:
         run: |
           rm -rf APKs
           mkdir -p APKs
-          
-          zipalign="tools/libzipalign.so"
-          framework="system/framework/framework-res.apk"
-          systemui="system/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"
+        
+          framework=".github/system/framework/framework-res.apk"
+          systemui=".github/system/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"
           
           for folder in *; do
             if [ -f "$folder/AndroidManifest.xml" ] && [ -d "$folder/res" ]; then
@@ -43,18 +42,10 @@ jobs:
               echo "Skipping $folder (missing manifest or res)"
             fi
           done
-      
-#       - name: Commit and Push APKs
-#         uses: stefanzweifel/git-auto-commit-action@v4
-#         with:
-#           commit_message: Add APKs
-#           file_pattern: 'APKs/**/*.apk'
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload overlay APKs
         uses: actions/upload-artifact@v3
         with:
           name: "AOSPModsOverlays"
-          path: APKs/*
+          path: .github/Output/*
           if-no-files-found: error
