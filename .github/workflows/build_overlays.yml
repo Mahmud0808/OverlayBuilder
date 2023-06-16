@@ -77,7 +77,7 @@ jobs:
           testkey=".github/keystore/testkey.pk8"
           certificate=".github/keystore/testkey.x509.pem"
           
-          for apk in "$unaligned"/*; do
+          for apk in "$unsigned"/*; do
             filename=$(basename "$apk")
             apksigner sign --key $testkey --cert $certificate --in "$unsigned/$filename" --out "$output/$filename"
           done
