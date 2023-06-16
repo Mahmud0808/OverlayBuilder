@@ -33,7 +33,6 @@
     <icon drawable="@drawable/themed_icon_apk_editor_plus" package="com.gmail.heagoo.apkeditor.plus" />
     <icon drawable="@drawable/themed_icon_apk_editor_plus" package="com.gmail.heagoo.apkeditor.pro" />
     <icon drawable="@drawable/themed_icon_apkmirror" package="com.apkmirror.helper.prod" />
-    <icon drawable="@drawable/themed_icon_apktoolm" package="ru.maximoff.apktool" />
     <icon drawable="@drawable/themed_icon_app_manager" package="io.github.muntashirakon.appmanager" />
     <icon drawable="@drawable/themed_icon_apple_music" package="com.apple.android.music" />
     <icon drawable="@drawable/themed_icon_arena_of_valor" package="com.garena.game.kgvn" />
