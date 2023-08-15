@@ -53,7 +53,7 @@ jobs:
               echo "Building APK for $foldername"
               
               # Build APK with AAPT
-              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -S "$folder"/res -I $systemui -F "$unaligned"/"$foldername".apk >/dev/null
+              aapt p -f -M "$folder"/AndroidManifest.xml -I $framework -I $systemui -S "$folder"/res -F "$unaligned"/"$foldername".apk --include-meta-data --auto-add-overlay
             else
               # Manifest or res directory is missing, skip building APK
               echo "Skipping $folder (missing manifest or res)"
