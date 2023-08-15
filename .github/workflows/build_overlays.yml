@@ -41,6 +41,10 @@ jobs:
           unaligned=".github/Unaligned"
           framework=".github/system/framework/framework-res.apk"
           systemui=".github/system/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"
+
+          if [ ! -f "$framework" ]; then
+            echo "::error::framework-res.apk not found" && exit 1
+          fi
         
           for folder in Overlays/*; do
             if [ -f "$folder/AndroidManifest.xml" ] && [ -d "$folder/res" ]; then
